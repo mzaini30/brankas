@@ -1,0 +1,17 @@
+extends base.pug
+
+block base
+  doctype html
+  html
+    head
+      link(rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css")
+      title Brankas
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      style 
+        block css
+    body
+      block isi
+      script(src="/lib/jquery/jquery.min.js")
+      script
+        block js

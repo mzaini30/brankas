@@ -1,0 +1,12 @@
+{
+    "name": "u0_a281/brankas",
+    "authors": [
+        {
+            "name": "mzaini30",
+            "email": "muhzaini30@gmail.com"
+        }
+    ],
+    "require": {
+        "pecee/pixie": "^4.11"
+    }
+}

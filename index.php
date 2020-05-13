@@ -3,3 +3,4 @@ include "base.php";
 if (!$_SESSION["login"]){
   header("Location: /login.php");
 }
+include 'view/tampil/beranda.php';

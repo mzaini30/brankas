@@ -37,6 +37,7 @@
       </form>
     </div>
     <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     <script>$(".login").on("submit", function(x) {
   x.preventDefault();
   return $.get("/api/cek-password.php?username=" + ($(".nama").val()) + "&password=" + ($(".password").val()), function(data) {

@@ -1,0 +1,29 @@
+extends ../layout.pug
+
+block isi
+	.container
+		center
+			h1 Brankas
+			hr
+		.row 
+			.col-sm-9
+			.col-sm-3
+				.panel.panel-success
+					.panel-heading Upload
+					.panel-body
+						form.form-upload
+							.form-group
+								label File
+								input.file(type='file')
+							.form-group
+								label Batasan download
+								input.form-control.jatah(type='number' value='1')
+							.from-group
+								input.btn.btn-default(type='submit' value='Upload')
+				.panel.panel-default
+					.panel-heading Menu
+					.list-group
+						a.list-group-item(href='/logout.php') Logout
+
+block js
+	include:coffee-script(bare=true) beranda.coffee

@@ -1,5 +1,6 @@
 <?php 
 include '../base.php';
+inlude '../auth.php';
 $kunci = md5(rand());
 $jatah = $_POST['jatah'];
 $nama_file = $_FILES['file']['name'];

@@ -66,14 +66,8 @@
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     <script>$(".form-upload").on("submit", function(x) {
   x.preventDefault();
-  return $.ajax({
-    url: '/api/upload.php',
-    data: $(this).serialize(),
-    method: 'post',
-    contentType: 'multipart/form-data',
-    success: function(data) {
-      return alert(data);
-    }
+  return $.post("/api/upload.php", $(this).serialize(), function(data) {
+    return alert(data);
   });
 });
 

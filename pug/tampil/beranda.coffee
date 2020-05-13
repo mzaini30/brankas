@@ -1,9 +1,4 @@
 $(".form-upload").on "submit", (x) ->
 	x.preventDefault()
-	$.ajax
-		url: '/api/upload.php'
-		data: $(@).serialize()
-		method: 'post'
-		contentType: 'multipart/form-data'
-		success: (data) ->
-			alert(data)
+	$.post "/api/upload.php", $(@).serialize(), (data) ->
+		alert(data)

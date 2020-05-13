@@ -7,7 +7,6 @@
         }
     ],
     "require": {
-        "pecee/pixie": "^4.11",
-        "gargron/fileupload": "^1.5"
+        "pecee/pixie": "^4.11"
     }
 }

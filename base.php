@@ -4,3 +4,4 @@ $db = (new \Pecee\Pixie\Connection('sqlite', [
     'driver'   => 'sqlite',
     'database' => $_SERVER["DOCUMENT_ROOT"] . '/database.sqlite'
 ]))->getQueryBuilder();
+session_start();

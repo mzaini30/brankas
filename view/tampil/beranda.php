@@ -22,7 +22,20 @@
         <hr>
       </center>
       <div class="row"> 
-        <div class="col-sm-9"></div>
+        <div class="col-sm-9">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Nama file</th>
+                  <th>Link download</th>
+                  <th>Jatah</th>
+                </tr>
+              </thead>
+              <tbody class="semua-file"></tbody>
+            </table>
+          </div>
+        </div>
         <div class="col-sm-3">
           <div class="panel panel-success">
             <div class="panel-heading">Upload</div>

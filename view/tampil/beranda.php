@@ -40,7 +40,7 @@
           <div class="panel panel-success">
             <div class="panel-heading">Upload</div>
             <div class="panel-body">
-              <form class="form-upload" method="post" action="/api/upload.php" enctype="multipart/form-data">
+              <form class="form-upload" method="post">
                 <div class="form-group">
                   <label>File</label>
                   <input class="file" type="file" name="file">
@@ -68,11 +68,11 @@
   x.preventDefault();
   return $.ajax({
     url: '/api/upload.php',
-    data: this.serialize(),
+    data: $(this).serialize(),
     method: 'post',
     contentType: 'multipart/form-data',
-    success: function() {
-      return alert('berhasil');
+    success: function(data) {
+      return alert(data);
     }
   });
 });

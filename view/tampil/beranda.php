@@ -43,7 +43,7 @@
               <form class="form-upload">
                 <div class="form-group">
                   <label>File</label>
-                  <input class="file" type="file">
+                  <input class="file" type="file" name="file">
                 </div>
                 <div class="form-group">
                   <label>Batasan download</label>

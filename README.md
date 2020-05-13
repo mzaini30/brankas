@@ -9,3 +9,9 @@ Jalankan perintah ini:
 ```bash
 composer install
 ```
+
+# Password
+
+Username: admin
+
+Password: admin

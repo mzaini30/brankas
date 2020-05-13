@@ -1,2 +1,3 @@
 .container
-	width 800px
+	width 350px
+	max-width 100%

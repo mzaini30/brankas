@@ -9,7 +9,7 @@ block isi
 		form.login 
 			.form-group
 				label Username
-				input.form-control.nama
+				input.form-control.nama(autofocus)
 			.form-group
 				label Password
 				input.form-control.password(type="password")
@@ -20,4 +20,4 @@ block js
 	include:coffee-script(bare=true) login.coffee
 
 block css
-  include:stylus login.stylus
+	include:stylus login.stylus

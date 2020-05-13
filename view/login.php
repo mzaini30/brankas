@@ -12,6 +12,10 @@
 .sembunyi {
   display: none;
 }
+.container {
+  width: 350px;
+  max-width: 100%;
+}
 
     </style>
   </head>
@@ -25,7 +29,7 @@
       <form class="login"> 
         <div class="form-group">
           <label>Username</label>
-          <input class="form-control nama">
+          <input class="form-control nama" autofocus>
         </div>
         <div class="form-group">
           <label>Password</label>

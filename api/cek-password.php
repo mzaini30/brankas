@@ -1,5 +1,7 @@
 <?php
 include "../base.php";
-$cek = $db->table("admin")->where("username", $_GET["username"])->where("password", $_GET["password"])->count();
+$username = $_GET["username"];
+$password = $_GET["password"];
+$cek = $db->table("admin")->where(compact('username'))->where(compact('password'))->count();
 header("Content-Type: application/json");
 echo json_encode($cek);

@@ -1,20 +1,23 @@
 extends layout.pug
 
 block isi
-  .container
-    center
-      h1 Login
-      hr
-    .alert.alert-warning.info.sembunyi Username dan password salah!
-    form.login 
-      .form-group
-        label Username
-        input.form-control.nama
-      .form-group
-        label Password
-        input.form-control.password(type="password")
-      .form-group
-        input.btn.btn-default(type="submit" value="Login")
-        
+	.container
+		center
+			h1 Login
+			hr
+		.alert.alert-warning.info.sembunyi Username dan password salah!
+		form.login 
+			.form-group
+				label Username
+				input.form-control.nama
+			.form-group
+				label Password
+				input.form-control.password(type="password")
+			.form-group
+				input.btn.btn-default(type="submit" value="Login")
+				
 block js
-  include:coffee-script(bare=true) login.coffee
+	include:coffee-script(bare=true) login.coffee
+
+block css
+  include:stylus login.stylus

@@ -40,14 +40,14 @@
           <div class="panel panel-success">
             <div class="panel-heading">Upload</div>
             <div class="panel-body">
-              <form class="form-upload">
+              <form class="form-upload" method="post" action="/api/upload.php" enctype="multipart/form-data">
                 <div class="form-group">
                   <label>File</label>
                   <input class="file" type="file" name="file">
                 </div>
                 <div class="form-group">
                   <label>Batasan download</label>
-                  <input class="form-control jatah" type="number" value="1">
+                  <input class="form-control jatah" type="number" value="1" name="jatah">
                 </div>
                 <div class="from-group">
                   <input class="btn btn-default" type="submit" value="Upload">
@@ -64,7 +64,18 @@
     </div>
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script>
+    <script>$(".form-upload").on("submit", function(x) {
+  x.preventDefault();
+  return $.ajax({
+    url: '/api/upload.php',
+    data: this.serialize(),
+    method: 'post',
+    contentType: 'multipart/form-data',
+    success: function() {
+      return alert('berhasil');
+    }
+  });
+});
 
     </script>
   </body>

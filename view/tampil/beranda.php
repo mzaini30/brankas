@@ -40,7 +40,7 @@
           <div class="panel panel-success">
             <div class="panel-heading">Upload</div>
             <div class="panel-body">
-              <form class="form-upload" method="post">
+              <form class="form-upload" method="post" action="/upload.php" enctype="multipart/form-data">
                 <div class="form-group">
                   <label>File</label>
                   <input class="file" type="file" name="file">
@@ -64,13 +64,7 @@
     </div>
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script>$(".form-upload").on("submit", function(x) {
-  x.preventDefault();
-  return $.post("/api/upload.php", $(this).serialize(), function(data) {
-    return alert(data);
-  });
-});
-
+    <script>
     </script>
   </body>
 </html>

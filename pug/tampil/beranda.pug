@@ -19,7 +19,7 @@ block isi
 				.panel.panel-success
 					.panel-heading Upload
 					.panel-body
-						form.form-upload(method='post')
+						form.form-upload(method='post' action='/upload.php' enctype='multipart/form-data')
 							.form-group
 								label File
 								input.file(type='file' name='file')
@@ -32,6 +32,3 @@ block isi
 					.panel-heading Menu
 					.list-group
 						a.list-group-item(href='/logout.php') Logout
-
-block js
-	include:coffee-script(bare=true) beranda.coffee
